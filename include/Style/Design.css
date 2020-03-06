@@ -134,7 +134,7 @@
 .workimage {
     /* background-image: url("include/image/15916.jpg"); */
     /* background-repeat: no-repeat; */
-    background-image: url('../image/15916.jpg');
+    background-image: url('../Image/15916.jpg');
     height: 300px;
     background-size: contain;
     /* background-size: 300px; */
@@ -144,7 +144,7 @@
 }
 
 .MyWork {
-    background-image: url('../image/wall.jpg');
+    background-image: url('../Image/wall.jpg');
     /* height: 300px; */
     background-size: contain;
     /* background-size: 300px; */
@@ -204,7 +204,7 @@
 /*********************Fixing*****************************/
 
 .Header-image {
-    background-image: url('../image/Header.jpg');
+    background-image: url('../Image/Header.jpg');
     height: 80%;
     background-repeat: no-repeat;
     background-position: 50% 40%;
@@ -212,7 +212,7 @@
 
 @media screen and (max-width: 768px) {
     .Header-image {
-        background-image: url('../image/Header.jpg');
+        background-image: url('../Image/Header.jpg');
         height: 60%;
         background-repeat: no-repeat;
         background-position: 50% 40%;
