@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .Zero-padding {
     padding: 0%;
 }
@@ -132,8 +136,7 @@
 }
 
 .workimage {
-   /
-    background-image: url('../Image/15916.jpg');
+    / background-image: url('../Image/15916.jpg');
     height: 300px;
     background-size: contain;
     /* background-size: 300px; */
