@@ -132,8 +132,7 @@
 }
 
 .workimage {
-    /* background-image: url("include/image/15916.jpg"); */
-    /* background-repeat: no-repeat; */
+   /
     background-image: url('../Image/15916.jpg');
     height: 300px;
     background-size: contain;
