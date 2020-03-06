@@ -10,6 +10,12 @@
 </head>
 
 <body style="max-width:100%;">
+    <!-- make it desktop only -->
+    <div class="col-sm-12 hidden-lg" style="position:fixed;background-color: #0E0C38;height: 100%;width: 100%;z-index: 100;top:0;opacity: 98%;">
+        <Div class="col-lg-12  Zero-padding" Style="color:white;font-family:gabriola;margin-top:70%;margin-left:25%;font-size:30px">Desktop only</Div>
+        <Div class="col-lg-12  Zero-padding" Style="color:white;font-family:gabriola;margin-top:30%;margin-left:7px;font-size:50px"></Div>
+    </div>
+    <!-- make it desktop only -->
     <!-- AllBody -->
     <div class="col-lg-12 col-sm-12 col-md-12 Zero-padding">
         <!-- header -->
@@ -30,10 +36,20 @@
                     <div class="col-lg-4  col-sm-4 col-md-4  col-lg-off-8 col-sm-off-8 col-md-off-8 visible-lg hidden-sm hidden-md  Zero-padding" style=position:relative>
                         <!-- Header Name -->
                         <div class="col-lg-2 col-md-2 col-sm-2 Heads" style="padding-top:1%;color:white;font-family:Gabriola;font-size:20px;padding-top:20px;padding-bottom:3px;padding-left:3%;">Home</div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-lg-off-05 col-sm-off-05 col-md-off-05 Heads" style="padding-top:1%;color:white;font-family:Gabriola;font-size:20px;padding-top:20px;padding-bottom:3px;padding-left:3%">About</div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-lg-off-05 col-sm-off-05 col-md-off-05 Heads" style="padding-top:1%;color:white;font-family:Gabriola;font-size:20px;padding-top:20px;padding-bottom:3px;padding-left:2.6%">Project</div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-lg-off-05 col-sm-off-05 col-md-off-05 Heads" style="padding-top:1%;color:white;font-family:Gabriola;font-size:20px;padding-top:20px;padding-bottom:3px;padding-left:2.6%">Artical</div>
-                        <div class="col-lg-2 col-md-2 col-sm-2 col-lg-off-05 col-sm-off-05 col-md-off-05 Heads" style="padding-top:1%;color:white;font-family:Gabriola;font-size:20px;padding-top:20px;padding-bottom:3px;padding-left:1%">Contact</div>
+                        <a href="#about">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-lg-off-05 col-sm-off-05 col-md-off-05 Heads" style="padding-top:1%;color:white;font-family:Gabriola;font-size:20px;padding-top:20px;padding-bottom:3px;padding-left:3%">About</div>
+                        </a>
+                        <a href="#project">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-lg-off-05 col-sm-off-05 col-md-off-05 Heads" style="padding-top:1%;color:white;font-family:Gabriola;font-size:20px;padding-top:20px;padding-bottom:3px;padding-left:2.6%">Project</div>
+                        </a>
+
+                        <a href="#project">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-lg-off-05 col-sm-off-05 col-md-off-05 Heads" style="padding-top:1%;color:white;font-family:Gabriola;font-size:20px;padding-top:20px;padding-bottom:3px;padding-left:2.6%">Artical</div>
+                        </a>
+
+                        <a href="#contact">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-lg-off-05 col-sm-off-05 col-md-off-05 Heads" style="padding-top:1%;color:white;font-family:Gabriola;font-size:20px;padding-top:20px;padding-bottom:3px;padding-left:1%">Contact</div>
+                        </a>
                     </div>
                     <!-- About-Me -->
                     <div class="col-lg-11 col-sm-11 col-md-11 About-me">
@@ -50,7 +66,9 @@
                         <Div class="hidden-lg col-lg-12 col-sm-12 col-md-12  Zero-padding" Style="color:white;font-family:gabriola;font-size:30px;margin-top:8px;">Let's create something beautiful together </Div>
 
 
-                        <Div class="col-lg-1 col-sm-12 col-md-12 col-lg-off-025 col-sm-off-05 col-md-off-025 btn" Style="color:white;font-size:20px;font-family:gabriola;margin-top:50px">Hire Me</Div>
+                        <a href="#contact">
+                            <Div class="col-lg-1 col-sm-12 col-md-12 col-lg-off-025 col-sm-off-05 col-md-off-025 btn" Style="color:white;font-size:20px;font-family:gabriola;margin-top:50px">Hire Me</Div>
+                        </a>
                     </div>
                     <div class="col-lg-1 day">
                         <div class="col-lg-6"></div>
@@ -67,7 +85,7 @@
         </Div>
         <!-- header -->
         <!-- AboutME -->
-        <div class="col-lg-12 aboutmesection zero-padding visible-lg hidden-sm hidden-md">
+        <div class="col-lg-12 aboutmesection zero-padding visible-lg hidden-sm hidden-md" id="about">
             <div class="col-lg-4 zero-padding col-lg-off-025" style="position:relative;left:-150px  ">
                 <img src="include\Image\Aboutme.png" alt="" Style="Width:700px;margin-top:150px;">
             </div>
@@ -97,12 +115,11 @@
                         <div class="col-lg-12 Zero-padding">Phone: </div>
                         <div class="col-lg-12 Zero-padding" style="margin-left:10px;">0788176606</div>
                     </div>
-                    <!-- <div class="col-lg-6" style="margin-top:20px;">
-                        <div class="col-lg-12 Zero-padding">Email:</div>
-                        <div class="col-lg-12 Zero-padding" style="margin-left:10px;">Ahmad.Said@gmail.com</div>
-                    </div> -->
+
                     <div class="col-lg-12" style="margin-top:20px;">
-                        <div class="col-lg-3 col-lg-off-3 Zero-padding btn" style="background-color:rgba(25, 23, 65, 81%);color:white;padding:8px;"><i class="fa fa-download fa-lg" aria-hidden="true"></i> MyCV</div>
+                        <a href="https://drive.google.com/open?id=1H2XeRrX8DS1NP6EgZsY8ib0DoQSbCRjM" target="_blank">
+                            <div class="col-lg-3 col-lg-off-3 Zero-padding btn" style="background-color:rgba(25, 23, 65, 81%);color:white;padding:8px;"><i class="fa fa-download fa-lg" aria-hidden="true"></i> MyCV</div>
+                        </a>
                     </div>
                 </Div>
 
@@ -148,7 +165,7 @@
         <!-- AboutME SmMD -->
 
         <!-- MYWork -->
-        <div class="col-lg-12 MyWork Zero-padding">
+        <div class="col-lg-12 MyWork Zero-padding" id="project">
             <div class="col-lg-12 col-sm-12 " style="background-image: url('include\Image\Wall.jpg');  background-size: contain;    background-repeat:repeat-y;position:relative">
 
                 <div class="col-lg-6 col-lg-off-5 Zero-padding">
@@ -220,83 +237,84 @@
                 </div>
 
             </div>
-            <!-- MYWork -->
+        </div>
+        <!-- MYWork -->
 
 
-            <!-- MYFooter -->
-            <div class="footer col-lg-12 col-sm" style="background-color:#191741;height:500px">
-                <!-- Form -->
-                <div class="col-lg-6 col-sm-12 col-lg-off-05" style="position:relative;">
-                    <img src="include/Image/bubbles2.png" style="max-height:50px;position:absolute;bottom:20px" class="hidden-sm hidden-md" alt="" />
-                    <!-- LG Form -->
-                    <form action="" method="post" class="Form  visible-lg hidden-sm hidden-md" style="margin-top:50px">
-                        <input type="text" name="" id="" class="col-lg-4 " placeholder="Name">
-                        <input type="text" name="" id="" class="col-lg-4" placeholder="Email" style="margin-left:10px;">
-                        <input type="text" name="" id="" class=" col-lg-8" placeholder="Subject" style="Width:68%;">
-                        <textarea name="" id="" rows="7" class="col-lg-8" style="Width:68%;" placeholder="Massege"></textarea>
-                        <div class="col-lg-12 Zero-padding">
-                            <Div class="col-lg-2 col-lg-off-6 btn " Style="color:white;font-size:20px;font-family:gabriola;margin-top:15px">Send</Div>
-                            <img src="include/Image/send-email.png" alt="" style="max-height:50px;margin-left:-20px">
-                        </div>
-                    </form>
-                    <!-- LG Form -->
-                    <!-- SM Form -->
-                    <form action="" method="post" class="  hidden-lg  col-sm-10 col-sm-off-1" style="">
-                        <input type="text" name="" id="" class="col-sm-12" style=" padding: 20px;">
-                        <input type="text" name="" id="" class="col-sm-12" placeholder="ahmad" style="padding: 20px;border: none;margin-top:5px">
-                        <!-- <input type="text" name="" id="" class=" col-sm-12" placeholder="ahmad" style=" border-radius: 16px;padding: 20px;border: none;margin-top:5px"> -->
-                        <textarea name="" id="" rows="4" class="col-sm-12" style="border: none;margin-top:5px"></textarea>
-                        <br>
-                        <div class="col-sm-12 col-lg-12 Zero-padding">
-                            <Div class=" col-sm-12 btn " Style="color:white;font-size:20px;font-family:gabriola;margin-top:15px">Send</Div>
-                            <img src="include/Image/send-email.png" alt="" style="max-height:50px;margin-top:-20px">
-                        </div>
-                    </form>
-                    <!-- SM Form -->
+        <!-- MYFooter -->
+        <div class="footer col-lg-12 col-sm" style="background-color:#191741;height:500px" id="contact">
+            <!-- Form -->
+            <div class="col-lg-6 col-sm-12 col-lg-off-05" style="position:relative;">
+                <img src="include/Image/bubbles2.png" style="max-height:50px;position:absolute;bottom:20px" class="hidden-sm hidden-md" alt="" />
+                <!-- LG Form -->
+                <form action="https://formspree.io/xeqkdkqr" method="post" class="Form  visible-lg hidden-sm hidden-md" style="margin-top:50px">
+                    <input type="text" name="name" id="" class="col-lg-4 " placeholder="Name">
+                    <input type="email" name="_replyto" id="" class="col-lg-4" placeholder="Email" style="margin-left:10px;">
+                    <input type="text" name="" id="" class=" col-lg-8" placeholder="Subject" style="Width:68%;">
+                    <textarea name="" id="" rows="7" class="col-lg-8" style="Width:68%;" placeholder="Massege"></textarea>
+                    <div class="col-lg-12 Zero-padding">
+                        <Div class="col-lg-2 col-lg-off-6 btn " Style="color:white;font-size:20px;font-family:gabriola;margin-top:15px" onClick="javascrip:document.forms[0].submit();">Send</Div>
+                        <img src="include/Image/send-email.png" alt="" style="max-height:50px;margin-left:-20px">
+                    </div>
+                </form>
+                <!-- LG Form -->
+                <!-- SM Form -->
+                <form action="" method="post" class="  hidden-lg  col-sm-10 col-sm-off-1" style="">
+                    <input type="text" name="" id="" class="col-sm-12" style=" padding: 20px;">
+                    <input type="text" name="" id="" class="col-sm-12" placeholder="ahmad" style="padding: 20px;border: none;margin-top:5px">
+                    <!-- <input type="text" name="" id="" class=" col-sm-12" placeholder="ahmad" style=" border-radius: 16px;padding: 20px;border: none;margin-top:5px"> -->
+                    <textarea name="" id="" rows="4" class="col-sm-12" style="border: none;margin-top:5px"></textarea>
+                    <br>
+                    <div class="col-sm-12 col-lg-12 Zero-padding">
+                        <Div class=" col-sm-12 btn " Style="color:white;font-size:20px;font-family:gabriola;margin-top:15px"></Div>
+                        <img src="include/Image/send-email.png" alt="" style="max-height:50px;margin-top:-20px">
+                    </div>
+                </form>
+                <!-- SM Form -->
 
-                </div>
-                <!-- Form -->
-                <!-- img -->
-                <div class="col-lg-5 visible-lg hidden-sm hidden-md" style="position:relative;">
-                    <img src="include/Image/Untitledfooter.png" style="max-height:450px;">
-                    <img src="include/Image/bubbles2.png" style="max-height:50px;position:absolute;right:50px" alt="">
-                </div>
-                <!-- img -->
             </div>
-            <!-- MYFooter -->
+            <!-- Form -->
+            <!-- img -->
+            <div class="col-lg-5 visible-lg hidden-sm hidden-md" style="position:relative;">
+                <img src="include/Image/Untitledfooter.png" style="max-height:450px;">
+                <img src="include/Image/bubbles2.png" style="max-height:50px;position:absolute;right:50px" alt="">
+            </div>
+            <!-- img -->
+        </div>
+        <!-- MYFooter -->
 
-            <!-- FinalFooter -->
-            <div class="col-lg-12 col-sm-12 Zero-padding" style="background-color:#0E0C38;max-height:50px;over">
+        <!-- FinalFooter -->
+        <div class="col-lg-12 col-sm-12 Zero-padding" style="background-color:#0E0C38;max-height:50px;over">
 
-                <!-- LG -->
-                <div class="col-lg-3 hidden-sm hidden-md visible-lg " style="position:relative">
-                    <span style="color:white;font-size:20px;font-family:gabriola;">Designed by: joghaimi</span>
-                    <img src="include/Image/paint-palette.png" style="max-height:30px;position:absolute;top:-10px" alt="">
-                </div>
-                <div class="col-lg-6 hidden-sm hidden-md visible-lg">
+            <!-- LG -->
+            <div class="col-lg-3 hidden-sm hidden-md visible-lg " style="position:relative">
+                <span style="color:white;font-size:20px;font-family:gabriola;">Designed by: joghaimi</span>
+                <img src="include/Image/paint-palette.png" style="max-height:30px;position:absolute;top:-10px" alt="">
+            </div>
+            <div class="col-lg-6 hidden-sm hidden-md visible-lg">
 
-                    <center><span style="font-family:Gabriola;font-size:20px;color:white">
+                <center><span style="font-family:Gabriola;font-size:20px;color:white">
                         Successful engineering is all about understanding how things break or fail.
                                             - Henry Petroski
                     </span></center>
-                </div>
-                <div class="col-lg-3 hidden-sm hidden-md visible-lg">
-                    <span style="font-family:Gabriola;font-size:20px;color:white;float:right">
+            </div>
+            <div class="col-lg-3 hidden-sm hidden-md visible-lg">
+                <span style="font-family:Gabriola;font-size:20px;color:white;float:right">
                            Email:Ahmad.said@gmail.com
                     </span> </div>
-                <!-- LG -->
-                <div class="col-sm-6 col-sm-off-4 hidden-lg " style="position:relative">
-                    <span style="color:white;font-size:20px;font-family:gabriola;">Designed by: joghaimi</span>
-                    <img src="include/Image/paint-palette.png" style="max-height:30px;position:absolute;top:-10px" alt="">
-                </div>
-
+            <!-- LG -->
+            <div class="col-sm-6 col-sm-off-4 hidden-lg " style="position:relative">
+                <span style="color:white;font-size:20px;font-family:gabriola;">Designed by: joghaimi</span>
+                <img src="include/Image/paint-palette.png" style="max-height:30px;position:absolute;top:-10px" alt="">
             </div>
-            <!-- FinalFooter -->
-
-
 
         </div>
-        <!-- AllBody -->
-        <script src="include\JS\lib.js"></script>
+        <!-- FinalFooter -->
+
+
+
+    </div>
+    <!-- AllBody -->
+    <script src="include\JS\lib.js"></script>
 
 </body>
