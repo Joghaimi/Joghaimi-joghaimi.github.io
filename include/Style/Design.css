@@ -136,7 +136,7 @@ html {
 }
 
 .workimage {
-    / background-image: url('../Image/15916.jpg');
+    background-image: url('../Image/15916.jpg');
     height: 300px;
     background-size: contain;
     /* background-size: 300px; */
@@ -338,7 +338,7 @@ h4 {
     /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%;
+    max-width: 100%;
     /* Full width */
     height: 100%;
     /* Full height */
@@ -511,4 +511,18 @@ h4 {
     border-radius: 6px;
     margin: 0 8px 8px 0;
     background: #0E0C38;
+}
+
+
+/****************************/
+
+.imgs-slider {
+    border-left: 0.3px solid #8d8d8d;
+    min-height: 410;
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.imgs-slider img {
+    margin-top: 10px;
 }
