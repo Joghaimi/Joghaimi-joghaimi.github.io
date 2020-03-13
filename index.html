@@ -1,16 +1,21 @@
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159938703-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159938703-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-159938703-1');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159938703-1');
+    </script>
+    <SCRipt src="include\JS\Drift.js"></SCRipt>
 
     <link rel="stylesheet" href="include\Style\grid.css">
     <link rel="stylesheet" href="include\Style\Design.css">
+    <link rel="stylesheet" href="include\Style\drift-basic.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -184,17 +189,18 @@
 
                 <div class="col-lg-12">
                     <div class="masonry">
-                        <div class="item">
+                        <div class="item img-magnifier-container">
                             <center><span style="font-family:Gabriola;font-size:25px;"> Gas Price </span></center>
-                            <img src="include/Image/GasPrice3D.png" id="myImg1" onclick="Showimage('myImg1')" ;>
+                            <img src="include/Image/Gasprice/customview.png" id="myImg1" onclick="Showimage('myImg1')" ;>
+
                         </div>
                         <div class="item">
                             <center><span style="font-family:Gabriola;font-size:25px;"> IOmodule </span></center>
-                            <img src="include/Image/IO_Dry.png" id="myImg2" onclick="Showimage('myImg2')" ;>
+                            <img src="include/Image/iomoduledrycontact/3DTopView.png" id="myImg2" onclick="Showimage('myImg2')" ;>
                         </div>
                         <div class="item">
                             <center><span style="font-family:Gabriola;font-size:25px;"> IOmodule-Wet Contact </span></center>
-                            <img src="include/Image/IO_Wet.png" id="myImg3" onclick="Showimage('myImg3')" ;>
+                            <img src="include/Image/iomodulwet/topview.png" id="myImg3" onclick="Showimage('myImg3')" ;>
                         </div>
                         <div class="item">
                             <center><span style="font-family:Gabriola;font-size:25px;"> Datalogger </span></center>
@@ -216,13 +222,21 @@
 
             </div>
             <!-- The Modal -->
-            <div id="myModal" class="modal">
+            <div id="myModal" class="modal col-lg-12">
                 <span class="close">&times;</span>
                 <div class="col-lg-10 col-lg-off-1 wrapper" style="background-color: White;">
-                    <div class="col-lg-6 product-img">
-                        <img class="modal-content" id="img01" height="420" width="327">
+                    <div class="col-lg-7 product-img Zero-padding">
+                        <div class="col-lg-8 Zero-padding">
+                            <img class="modal-content drift-demo-trigger " data-zoom="large.jpg" style="margin-top: 50px;width:400px;" id="img01">
+                        </div>
+                        <div class="col-lg-3 imgs-slider">
+                            <div class="col-lg-12 Zero-padding" onclick="currentSlide(1)" style="width: 120px;"><img id="image1" alt="" srcset="" width="100px"></div>
+                            <div class="col-lg-12 Zero-padding" onclick="currentSlide(2)" style="width: 120px;"><img id="image2" alt="" srcset="" width="100px"></div>
+                            <div class="col-lg-12 Zero-padding" onclick="currentSlide(3)" style="width: 120px;"><img id="image3" alt="" srcset="" width="100px"></div>
+
+                        </div>
                     </div>
-                    <div class="col-lg-6" id="">
+                    <div class="col-lg-5" id="">
                         <div class="product-info" id="product_info">
 
                         </div>
@@ -245,7 +259,7 @@
                     <input type="text" name="name" id="" class="col-lg-4 " placeholder="Name">
                     <input type="email" name="_replyto" id="" class="col-lg-4" placeholder="Email" style="margin-left:10px;">
                     <input type="text" name="" id="" class=" col-lg-8" placeholder="Subject" style="Width:68%;">
-                    <textarea name="message" id="" rows="7" class="col-lg-8" style="Width:68%;" placeholder="Massege"></textarea>
+                    <textarea name="" id="" rows="7" class="col-lg-8" style="Width:68%;" placeholder="Massege"></textarea>
                     <div class="col-lg-12 Zero-padding">
                         <Div class="col-lg-2 col-lg-off-6 btn " Style="color:white;font-size:20px;font-family:gabriola;margin-top:15px" onClick="javascrip:document.forms[0].submit();">Send</Div>
                         <img src="include/Image/send-email.png" alt="" style="max-height:50px;margin-left:-20px">
@@ -281,7 +295,7 @@
         <div class="col-lg-12 col-sm-12 Zero-padding" style="background-color:#0E0C38;max-height:50px;over">
 
             <!-- LG -->
-            <div class="col-lg-3 hidden-sm hidden-md visible-lg " style="position:relative">
+            <div class="col-lg-3 hidden-sm hidden-md visible-lg " style="position: relative;    ">
                 <span style="color:white;font-size:20px;font-family:gabriola;">Designed by: joghaimi</span>
                 <img src="include/Image/paint-palette.png" style="max-height:30px;position:absolute;top:-10px" alt="">
             </div>
