@@ -88,7 +88,7 @@ function ShowInnerDiv($id) {
         image3.style.visibility = "hidden";
 
     }
-    if (Slideimagsrc.length == 2) {
+    if (Slideimagsrc.length == 1) {
         image1.src = Slideimagsrc[0];
         // image2.src = Slideimagsrc[1];
         image2.style.visibility = "hidden";
