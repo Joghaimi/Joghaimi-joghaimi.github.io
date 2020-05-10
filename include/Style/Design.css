@@ -107,6 +107,13 @@ html {
     overflow: hidden;
 }
 
+.client-project {
+    background-color: #EEEFF1;
+    height: 650px;
+    max-width: 1920px;
+    overflow: hidden;
+}
+
 
 /***********************************/
 
@@ -267,11 +274,18 @@ h4 {
     background: #fff;
     padding: 1em;
     margin: 0 0 1.5em;
-    width: 100%;
+    /* width: 100%; */
     -webkit-transition: 1s ease all;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+.itemBox {
+    display: inline-block;
+    background: #fff;
+    -webkit-transition: 1s ease all;
     box-shadow: 2px 2px 4px 0 #ccc;
 }
 
@@ -327,7 +341,7 @@ h4 {
 
 /* The Modal (background) */
 
-.modal {
+.ClientModel {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -442,7 +456,7 @@ h4 {
 
 .product-text {
     height: 300px;
-    width: 327px;
+    width: 400px;
 }
 
 .product-img img {
@@ -471,8 +485,7 @@ h4 {
     letter-spacing: 0.2em;
 }
 
-.product-text p {
-    height: 125px;
+#ClientModelDesc {
     margin: 0 0 0 38px;
     font-family: 'Playfair Display', serif;
     color: #8d8d8d;
@@ -513,16 +526,31 @@ h4 {
     background: #0E0C38;
 }
 
-
-/****************************/
-
-.imgs-slider {
-    border-left: 0.3px solid #8d8d8d;
-    min-height: 410;
-    margin-top: 20px;
-    padding-top: 50px;
+.box-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.imgs-slider img {
-    margin-top: 10px;
+.pinkTag {
+    background-color: #e5005b;
+}
+
+.opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/***********************************************/
+
+
+/* Be */
+
+.curcs {
+    color: #8d8d8d;
+    font-size: 30px !important;
+    cursor: pointer;
+    text-shadow: 0 0 2px #8d8d8d, 0 0 2px #8d8d8d;
+}
+
+.curcs:hover {
+    color: #0E0C38;
 }
