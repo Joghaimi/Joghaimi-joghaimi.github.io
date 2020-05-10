@@ -1,106 +1,205 @@
-var modal = document.getElementById("myModal");
-var modalImg = document.getElementById("img01");
-var image1 = document.getElementById("image1");
-var image2 = document.getElementById("image2");
-var image3 = document.getElementById("image3");
-// var captionText = document.getElementById("caption");
-var product_info = document.getElementById("product_info");
+// NEW DESING
+//  FOR theClient Section
+var index = 0;
+// GetClientImage
+var BOX1_IMAG = document.getElementById("BOX1_IMAGE");
+var BOX2_IMAG = document.getElementById("BOX2_IMAGE");
+var BOX3_IMAG = document.getElementById("BOX3_IMAGE");
+// GetClientTitel
+var BOX1_TITEL = document.getElementById("BOX1_Titel");
+var BOX2_TITEL = document.getElementById("BOX2_Titel");
+var BOX3_TITEL = document.getElementById("BOX3_Titel");
+// ClientModel
+var CLIENT_MODEL = document.getElementById("ClientModel");
+var CLIENT_MODEL_IMAGE = document.getElementById("Modal_Image");
+var CLIENT_MODEL_Titel = document.getElementById("ClientModelTitel");
+var CLIENT_MODEL_Description = document.getElementById("ClientModelDesc");
+var ClientCounterForimage = 0;
+var $ClientModelNumber;
+// MY Project Section 
+var workImg = document.getElementById("workImage");
+var Tags = document.getElementById("Tags");
+var text = document.getElementById("text");
+var projectname = document.getElementById("projectname");
+var CounterForimageinTheBox = 0;
+var slideCount = 0;
+var nextClientBoxImage = 0;
+// Client ALL Image ARRAY
+var AllImageArrayClient = [
+    [
+        'include/Image/Gasprice/topview.png',
+        'include/Image/Gasprice/BottomView.png',
 
-function Showimage($id) {
-    var img = document.getElementById($id);
-    modal.style.display = "block";
-    modalImg.src = img.src;
-    ShowInnerDiv($id);
+    ],
+    [
+        'include/Image/iomodulwet/topview.png',
+        'include/Image/iomodulwet/bottomview.png',
+        'include/Image/iomodulwet/2DView.png',
+    ],
+    [
+        'include/Image/iomoduledrycontact/3DTopView.png',
+        'include/Image/iomoduledrycontact/3DTBottomView.png',
+        'include/Image/iomoduledrycontact/2DView.png',
+    ],
+    [
+        'include/Image/DataLogger/TOPView.png',
+        'include/Image/DataLogger/BottomView.png',
+    ],
+    [
+        'include/Image/AdressBoard/TOPView.png',
+        'include/Image/AdressBoard/BottomView.png',
+        'include/Image/AdressBoard/2DView.png',
+    ],
 
+];
 
+// Titel Array
+var TitelArrayClient = [
+    'Gas Price',
+    'IO Module - WET',
+    'IO Module - DRY',
+    'Datalogger',
+    'Address Board',
+];
+
+var DescriptionArray = [
+    'High performance Board ,which can control up to 32 Dot matrix driver.<br> Control the led driver over :<br> - Wi-Fi. <br> - Bluetooth. <br>  - Rf and ethernet',
+    'High-performance IoT Board , for controlling up to 8 Wet Contact by mobile Application via WiFi or Bluetooth and read data  from many sensors and send them via WiFi some of its features:<br> -8 Digital output. <br>- 8 Digital isolated input<br> - 3 Analog input <br> - Wi-Fi & Bluetooth connectivity <br> - Ethernet connectivity',
+    'High-performance IoT Board , for controlling up to 8 Dry Contact by mobile Application via WiFi or Bluetooth and read data  from many sensors and send them via WiFi some of its features:<br> -8 Digital output. <br>- 8 Digital isolated input<br> - 3 Analog input <br> - Wi-Fi & Bluetooth connectivity <br> - Ethernet connectivity',
+    'High-performance Board, which can read data from up to  32 sensors, save them in SD card and share them in the internet some of its features:<br>- take data From up to 32 sensor <br>- send messages during the alert and make phone calls  <br> - Ethernet & RF connectivity <br> - Real-Time Clock ',
+    'Our new product for controlling Seven-segment display,<br> it works in 7-12 voltage range with PIC18F25K Processor, and it has the following features:<br> - RS-485 connectivity <br>- Auto brightness adjustment<br> - Temperature control<br>- Low-cost BOM',
+
+];
+
+// MY Project Section
+
+var slidImagesrc = [
+    [
+        "include/Image/Ninja-ESP/TOP3D.png",
+        "include/Image/Ninja-ESP/Bottom3D.png",
+        "include/Image/Ninja-ESP/TOP&Bottom2D.png"
+    ],
+
+];
+var slidProjectName = [
+    "Ninja-ESP",
+
+];
+var slidTags = [
+    "<div class='chip col-lg-3'>PCB Design</div>" +
+    "<div class='chip col-lg-3'>Electronics</div>" +
+    "<div class='chip col-lg-3'>IOT</div>" +
+    "<div class='chip col-lg-3 pinkTag'>OPEN Source</div>",
+];
+var slidTxt = [
+    " Ninja-links is a high-performance development board for IoT application compatible with Arduino IDE and has WiFi, Bluetooth connectivity.with many more build-in feature so the developer can focus on programming" +
+    "some of its features :  <br>" +
+    "  - RS-485 <br>" +
+    "  - USB Type C <br>" +
+    "  - SD Card <br>" +
+    "  - RGB <br>" +
+    "  - Two 5 Volt IO  <br>" +
+    "  - Bluetooth connectivity <br>" +
+    "  - WiFi connectivity",
+];
+
+// Client Function
+function nextClientBox() {
+    if (AllImageArrayClient.length > (index + 3)) {
+        index++;
+        clientChangeImage(index);
+        clientChangeTitel(index);
+    }
 }
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function() {
-    modal.style.display = "none";
-}
-var Slideimagsrc;
 
-function ShowInnerDiv($id) {
-    var titel = "";
-    var Company = "";
-    var txt = "";
-    var tag = "";
-
-    // All tag {<div class='chip col-lg-3'>PCB Design</div><div class='chip col-lg-3'>Electronics</div><div class='chip col-lg-3'>PLC</div><div class='chip col-lg-6'>Programming</div>}
-    //   G:\WebSite\[004] ProgramFile\Include\Image\iomoduledrycontact
-    switch ($id) {
-        case "myImg1":
-            titel = "Gas Price";
-            Company = "iDealChip";
-            txt = "High performance Board ,which can control up to 32 Dot matrix driver.<br> Control the led driver over Wi-Fi,Bluetooth,Rf and ethernet";
-            tag = "<div class='chip col-lg-3'>PCB Design</div><div class='chip col-lg-3'>Electronics</div>";
-            Slideimagsrc = ["include/Image/Gasprice/customview.png", "include/Image/Gasprice/topview.png"];
-            break;
-        case "myImg2":
-            titel = "IOModule";
-            Company = "iDealChip";
-            txt = "High performance Board ,which can control up to 8 Relay Via ethernet,Wi-Fi&Bluetooth.Also monitor 8 digital input and 3 Analog input";
-            tag = "<div class='chip col-lg-3'>PCB Design</div><div class='chip col-lg-3'>Electronics</div>";
-            Slideimagsrc = ["include/Image/iomoduledrycontact/3DTopView.png", "include/Image/iomoduledrycontact/3DTBottomView.png", "include/Image/iomoduledrycontact/3DTCustomView.png"];
-
-            break;
-        case "myImg3":
-            titel = "IOModule-Wet Contact";
-            Company = "iDealChip";
-            txt = "High performance Board ,which can control up to 8 wet Output Via ethernet,Wi-Fi&Bluetooth.Also monitor 8 digital input and 3 Analog input";
-            tag = "<div class='chip col-lg-3'>PCB Design</div><div class='chip col-lg-3'>Electronics</div>";
-            Slideimagsrc = ["include/Image/iomodulwet/topview.png", "include/Image/iomodulwet/bottomview.png", "include/Image/iomodulwet/custom.png"];
-
-            break;
-        case "myImg4":
-            titel = "Datalogger";
-            Company = "iDealChip";
-            txt = "High performance Board ,which can monitor the data and send it using RF,ethernet . make warning calls and send messages";
-            tag = "<div class='chip col-lg-3'>PCB Design</div><div class='chip col-lg-3'>Electronics</div>";
-            Slideimagsrc = ["include/Image/Datalogger.png", "include/Image/DataloggerAl layer.png", "include/Image/Datalogger3D.png"];
-
-            break;
-        case "myImg5":
-            titel = "Atomic Clock";
-            Company = "iDealChip";
-            txt = "High performance Board ,which Read the time and date From atomic Clock and Display is in P10 dot matrix . Also it take time from RTC & GPRS ";
-            tag = "<div class='chip col-lg-3'>PCB Design</div><div class='chip col-lg-3'>Electronics</div>";
-            Slideimagsrc = ["include/Image/Attomic_Clock SlaveBoard.png"];
-
-            break;
+function prevClientBox() {
+    if (index > 0) {
+        index--;
+        clientChangeImage(index);
+        clientChangeTitel(index);
 
     }
-    product_info.innerHTML = "<div class='product-text'><center><h1>" + titel + "</h1></center><center><h2>" + Company + "</h2></center><p>" + txt +
-        "</p></div><div class='Col-lg-12 center' >" + tag + "</div>";
-
-    if (Slideimagsrc.length == 3) {
-        image2.style.visibility = "visible";
-        image3.style.visibility = "visible";
-        image1.src = Slideimagsrc[0];
-        image2.src = Slideimagsrc[1];
-        image3.src = Slideimagsrc[2];
-
-    }
-    if (Slideimagsrc.length == 2) {
-        image2.style.visibility = "visible";
-        image1.src = Slideimagsrc[0];
-        image2.src = Slideimagsrc[1];
-        image3.style.visibility = "hidden";
-
-    }
-    if (Slideimagsrc.length == 1) {
-        image1.src = Slideimagsrc[0];
-        // image2.src = Slideimagsrc[1];
-        image2.style.visibility = "hidden";
-        image3.style.visibility = "hidden";
-
-    }
-}
-/*************** */
-var $gotonum;
-
-
-function currentSlide($slideNum) {
-    modalImg.src = Slideimagsrc[$slideNum - 1];
 
 }
+
+function clientChangeImage($index) {
+    BOX1_IMAG.src = AllImageArrayClient[$index][0];
+    BOX2_IMAG.src = AllImageArrayClient[$index + 1][0];
+    BOX3_IMAG.src = AllImageArrayClient[$index + 2][0];
+}
+
+function clientChangeTitel($index) {
+    BOX1_TITEL.innerHTML = TitelArrayClient[index];
+    BOX2_TITEL.innerHTML = TitelArrayClient[index + 1];
+    BOX3_TITEL.innerHTML = TitelArrayClient[index + 2];
+}
+
+// Client Model Design
+function showClientModel($modeNum) {
+    CLIENT_MODEL.style.display = "block";
+    ClientModelTitel($modeNum);
+    ClientModelDescription($modeNum);
+    ClientModelImage($modeNum);
+}
+
+function hideClientModel() {
+    CLIENT_MODEL.style.display = "none";
+}
+// CLIENT_MODEL_Titel
+function ClientModelTitel($ClientModelNumber) {
+    window.$ClientModelNumber = $ClientModelNumber;
+    CLIENT_MODEL_Titel.innerHTML = TitelArrayClient[$ClientModelNumber];
+}
+// ClientModelDescription
+function ClientModelDescription($ClientModelNumber) {
+    CLIENT_MODEL_Description.innerHTML = DescriptionArray[$ClientModelNumber];
+}
+// CLIENT_MODEL_IMAGE 
+function ClientModelImage($ClientModelNumber) {
+    CLIENT_MODEL_IMAGE.src = AllImageArrayClient[$ClientModelNumber][0];
+    ClientModelShow = 0;
+    // Auto change image 
+}
+// Next Client IMAGE Change 
+function nextClientBoximage() {
+    if (AllImageArrayClient[$ClientModelNumber].length - 1 > nextClientBoxImage) {
+        nextClientBoxImage++;
+    } else {
+        nextClientBoxImage = 0;
+    }
+    CLIENT_MODEL_IMAGE.src = AllImageArrayClient[$ClientModelNumber][nextClientBoxImage];
+}
+
+
+// MY Project Function
+function nextSlide() {
+    slideCount++;
+    cahngeBody();
+}
+
+function befSlide() {
+    slideCount--;
+    cahngeBody();
+}
+// Auto Change Image
+function changeworkimage() {
+    if ((slidImagesrc[slideCount].length) - 1 > (CounterForimageinTheBox)) {
+        CounterForimageinTheBox++;
+    } else {
+        CounterForimageinTheBox = 0;
+    }
+    workImg.src = slidImagesrc[slideCount][CounterForimageinTheBox];
+    // Auto Slide 
+    setTimeout(changeworkimage, 2200);
+}
+changeworkimage();
+
+// Set the TextBody
+function cahngeBody() {
+    Tags.innerHTML = slidTags[slideCount];
+    text.innerHTML = slidTxt[slideCount];
+    projectname.innerHTML = slidProjectName[slideCount];
+
+}
+
+// NEW DESING
