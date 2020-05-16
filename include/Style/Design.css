@@ -21,7 +21,6 @@ html {
     background-color: rgba(25, 23, 65, 81%);
     position: absolute;
     top: 0px;
-    /* height: 575px; */
     height: 100%;
     Width: 100%
 }
@@ -62,16 +61,12 @@ html {
 
 .line-SM-3 {
     Border-bottom: 1px solid #191741;
-    /* height: 450px; */
     width: 100%;
-    /* margin-left: 20px;
-    margin-right: 20px; */
     position: relative;
     top: 20px;
 }
 
 .Heads:hover {
-    /* background-color: #983298; */
     background-color: rgba(152, 50, 152, 40%);
     cursor: pointer;
 }
@@ -79,11 +74,9 @@ html {
 .About-me {
     position: relative;
     top: 100px;
-    /* left: 10%; */
 }
 
 .btn {
-    /* background-color: red; */
     background-color: rgba(152, 50, 152, 40%);
     padding: 1px;
     text-align: center;
@@ -91,7 +84,6 @@ html {
 }
 
 .day {
-    /* color: red */
     position: relative;
     top: 100px;
 }
@@ -146,20 +138,14 @@ html {
     background-image: url('../Image/15916.jpg');
     height: 300px;
     background-size: contain;
-    /* background-size: 300px; */
-    /* height: 300px; */
     overflow: hidden;
     background-repeat: no-repeat;
 }
 
 .MyWork {
     background-image: url('../Image/wall.jpg');
-    /* height: 300px; */
     background-size: contain;
-    /* background-size: 300px; */
-    /* height: 300px; */
     overflow: hidden;
-    /* background-repeat: no-repeat; */
 }
 
 
@@ -218,19 +204,6 @@ html {
     background-repeat: no-repeat;
     background-position: 50% 40%;
 }
-
-
-/* @media screen and (max-width: 768px) {
-    .Header-image {
-        background-image: url('../Image/Header.jpg');
-        height: 60%;
-        background-repeat: no-repeat;
-        background-position: 50% 40%;
-    }
-} */
-
-
-/*************************************************************/
 
 body {
     font-family: sans-serif;
@@ -500,9 +473,7 @@ h4 {
     margin: 0 0 47px 38px;
     font-size: 16px;
     font-family: gabriola;
-    /* font-weight: 400; */
     text-transform: uppercase;
-    /* color: #d2d2d2; */
     letter-spacing: 0.2em;
 }
 
@@ -608,4 +579,39 @@ svg rect {
     position: fixed;
     left: 0;
     top: 0;
+}
+
+.WhiteCardHolder {
+    margin-top: -30px;
+    font-family: fHaas Grot Text R Web, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    /* line-height: 40px; */
+}
+
+.WhiteCard {
+    display: inline-block;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 0 #ccc;
+    height: 250px;
+    padding-top: 12%;
+    overflow: hidden;
+    color: #e5005b;
+}
+
+.WhiteCardTitel {
+    color: #4a4a4a;
+}
+
+.WhiteCardBody {
+    color: #6e6e6e;
+    font-size: 14px;
+}
+
+.Social-icon {
+    display: inline-block;
+    padding-right: 12px;
 }
