@@ -1406,13 +1406,6 @@
         ],
         [
             "Part9",
-            "screen is an input unit",
-            "Yes",
-            "No",
-            1
-        ],
-        [
-            "Part9",
             "GB equals ",
             "0 or 1",
             "1024 * 1024 KB",
@@ -1440,47 +1433,12 @@
         ],
         [
             "Part9",
-            "TOUCH SCREEN IS Considered as input and output device",
-            "True",
-            "False",
-            1
-        ],
-        [
-            "Part9",
-            "The extension for 'Microsoft powerpoint' is ppt ",
-            "True",
-            "False",
-            1
-        ],
-        [
-            "Part9",
             "The extension for ' Microsoft word ' is  ",
             "ppt",
             "doc",
             "xlsx",
             "pdf",
             2
-        ],
-        [
-            "Part9",
-            "DVD is an abbreviation for 'display video disk:' ",
-            "True",
-            "False",
-            2
-        ],
-        [
-            "Part9",
-            "RAM is an abbreviation for 'random access memory' ",
-            "True",
-            "False",
-            1
-        ],
-        [
-            "Part9",
-            "the speed of a computer CPU can be measured in megahertz ",
-            "True",
-            "False",
-            1
         ],
         [
             "Part9",
