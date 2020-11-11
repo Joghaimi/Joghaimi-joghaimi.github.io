@@ -1,6 +1,32 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "https://ora.ahu.edu.jo:4443/reg/faces/index;jsessionid=SyqzXsr3t9KPDN6aXlFDv4q5l0eKDM5t6IXsy0hwgBIQdHMgRWZx!-1297124515"
+        ],
+        [
+            "التعليم الالكتروني",
+            "http://elearning.ahu.edu.jo/login/index.php"
+        ],
+        [
+            "حساب المعدل",
+            "http://www.ahu.edu.jo/AR-article-1774"
+        ],
+        [
+            "جريدة المواد",
+            "http://www.ahu.edu.jo/schd/"
+        ]
     ]
 }

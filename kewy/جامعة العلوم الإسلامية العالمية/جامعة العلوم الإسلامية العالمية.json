@@ -1,6 +1,32 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "http://grades.wise.edu.jo:8889/"
+        ],
+        [
+            "التعليم الالكتروني",
+            "https://wise-elearning.elegant-path.net/moodle/"
+        ],
+        [
+            "حساب المعدل",
+            "https://khsoosi.com/gpacalculater/212/the-world-islamic-science--and--education-university"
+        ],
+        [
+            "جريدة المواد",
+            "http://grades.wise.edu.jo:8889/reg/schedule.php"
+        ]
     ]
 }

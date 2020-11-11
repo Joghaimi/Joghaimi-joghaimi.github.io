@@ -1,6 +1,32 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "https://student.aabu.edu.jo/nreg/"
+        ],
+        [
+            "التعليم الالكتروني",
+            "https://aabu.site/moodle/login/"
+        ],
+        [
+            "حساب المعدل",
+            "https://web2.aabu.edu.jo/faculties_site/arabic/index.jsp?menu_id=27&site_no=100068&col_id=68&dept_id=0"
+        ],
+        [
+            "جريدة المواد",
+            "https://web2.aabu.edu.jo/nara/reg/MatProgram/mat_program_main.jsp"
+        ]
     ]
 }

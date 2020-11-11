@@ -1,6 +1,32 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "http://onlineregistration.jpu.edu.jo/ershad/students/login.aspx"
+        ],
+        [
+            "التعليم الالكتروني",
+            "http://www.jpu.edu.jo/lms/"
+        ],
+        [
+            "حساب المعدل",
+            "https://khsoosi.com/gpacalculater/210/JerashUniversity"
+        ],
+        [
+            "جريدة المواد",
+            "http://www.jpu.edu.jo/newsletter/?p=98858"
+        ]
     ]
 }

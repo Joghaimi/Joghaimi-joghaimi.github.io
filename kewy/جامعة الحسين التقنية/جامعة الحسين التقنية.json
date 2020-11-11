@@ -1,6 +1,24 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "https://sis.htu.edu.jo/"
+        ],
+        [
+            "التعليم الالكتروني",
+            "https://elearning.htu.edu.jo/login/index.php"
+        ]
     ]
 }

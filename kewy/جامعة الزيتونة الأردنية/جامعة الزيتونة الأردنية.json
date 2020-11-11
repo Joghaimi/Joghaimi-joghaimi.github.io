@@ -1,6 +1,32 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "https://portal.zuj.edu.jo/"
+        ],
+        [
+            "التعليم الالكتروني",
+            "https://www.zuj.edu.jo/e-learning/?lang=ar"
+        ],
+        [
+            "حساب المعدل",
+            "https://khsoosi.com/gpacalculater/196/-Al-Zaytoonah-University"
+        ],
+        [
+            "جريدة المواد",
+            "https://portal.zuj.edu.jo/faces/ui/pages/guest/scheduleCourses/index.xhtml;jsessionid=a121384a24158b1f000413ab4a1a"
+        ]
     ]
 }

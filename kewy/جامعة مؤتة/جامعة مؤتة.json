@@ -1,6 +1,32 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "https://www.mutah.edu.jo/Pages/Students-Registration.aspx"
+        ],
+        [
+            "التعليم الالكتروني",
+            "https://www.mutah.edu.jo/Documents/Elearn10.htm"
+        ],
+        [
+            "حساب المعدل",
+            "https://xwww.mutah.edu.jo/regpage/calcAvg.php"
+        ],
+        [
+            "جريدة المواد",
+            "http://portal1.mutah.edu.jo/eeservice/faces/loginView?_adf.ctrl-state=13ojd7w172_3"
+        ]
     ]
 }

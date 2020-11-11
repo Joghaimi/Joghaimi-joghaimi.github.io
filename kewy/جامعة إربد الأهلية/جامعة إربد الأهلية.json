@@ -1,6 +1,28 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "http://edugate.inu.edu.jo/inu/"
+        ],
+        [
+            "التعليم الالكتروني",
+            "https://elearning.inu.edu.jo/login/index.php"
+        ],
+        [
+            "حساب المعدل",
+            "https://daafoor.com/gpacalculater/202-irbid-national-university"
+        ]
     ]
 }
