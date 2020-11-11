@@ -1,6 +1,32 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "https://reg2.hu.edu.jo/"
+        ],
+        [
+            "التعليم الالكتروني",
+            "http://www.mlms.hu.edu.jo/"
+        ],
+        [
+            "حساب المعدل",
+            "https://elcom-hu.com/Grade.php"
+        ],
+        [
+            "جريدة المواد",
+            "https://hu.edu.jo/units/class_a.aspx?unitid=40000000"
+        ]
     ]
 }

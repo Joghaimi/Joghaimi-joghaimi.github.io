@@ -1,6 +1,28 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "https://regweb3.ju.edu.jo:4443/selfregapp/home.xhtml"
+        ],
+        [
+            "التعليم الالكتروني",
+            "https://elearning.ju.edu.jo/"
+        ],
+        [
+            "حساب المعدل",
+            "https://www.un-web.com/tools/university_of_jordan/"
+        ]
     ]
 }

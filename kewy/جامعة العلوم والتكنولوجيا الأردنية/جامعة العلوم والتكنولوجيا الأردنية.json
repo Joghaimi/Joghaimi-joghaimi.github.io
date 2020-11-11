@@ -1,6 +1,32 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "https://www.just.edu.jo/ar/reg/Pages/default.aspx"
+        ],
+        [
+            "التعليم الالكتروني",
+            "https://justlearn.just.edu.jo/login/index.php"
+        ],
+        [
+            "حساب المعدل",
+            "http://joavg.com/just"
+        ],
+        [
+            "جريدة المواد",
+            "https://services.just.edu.jo/courseschedule/"
+        ]
     ]
 }

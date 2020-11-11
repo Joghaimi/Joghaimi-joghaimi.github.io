@@ -1,6 +1,32 @@
 {
     "link": [
-       ["حساب المعدل", "hfjskkl"],
-       ["حساب المعدل", "hfjskkl"]
+        [
+            "المنح والقروض",
+            "http://www.dsamohe.gov.jo/"
+        ],
+        [
+            "تنسيق القبول الموحد",
+            "http://www.admhec.gov.jo/"
+        ],
+        [
+            "التعليم العالي",
+            "http://www.mohe.gov.jo/ar/Pages/default.aspx"
+        ],
+        [
+            "بوابة الطالب",
+            "http://kuc-onlinereg.karak.bau.edu.jo/reg_new/index.jsp"
+        ],
+        [
+            "التعليم الالكتروني",
+            "http://s4.ebalqa.courses/nkarakmoodle"
+        ],
+        [
+            "حساب المعدل",
+            "https://app2.bau.edu.jo:7799/courses/index.jsp?param=1"
+        ],
+        [
+            "جريدة المواد",
+            "http://kuc-onlinereg.karak.bau.edu.jo/courses/index.jsp"
+        ]
     ]
 }
